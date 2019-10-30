@@ -11,7 +11,9 @@
 # production
 /build
 
-/src/key
+/src/key/
+/public/
+.idea/
 
 # misc
 .DS_Store
