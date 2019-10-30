@@ -12,3 +12,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.slick-slide img {
+  display: unset;
+}
+
+.slick-next, .slick-prev {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  border: none;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+.slick-next {
+  right: -16px;
+}
+
+.slick-prev:before {
+  content: '◄';
+}
+
+.slick-next:before {
+  content: '►';
+}
+
+.slick-next:before, .slick-prev:before {
+  font-family: "FontAwesome";
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1;
+  opacity: .75;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-next, .slick-next:focus, .slick-next:hover, .slick-prev, .slick-prev:focus, .slick-prev:hover {
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+#smaller {
+  height: 83px;
+}
